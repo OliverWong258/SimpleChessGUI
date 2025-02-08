@@ -22,7 +22,7 @@ Since the project is not packaged as an executable file, you need to open two te
 
 ## Chess Engine
 
-The `stockfish` folder contains the Stockfish chess engine, which can be used for testing purposes. Make sure to test the engine on a Windows system for full compatibility.
+You may use Stockfish as the chess engine. Make sure to run the engine on a Windows system for full compatibility.
 
 ## Documentation
 
