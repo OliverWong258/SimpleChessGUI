@@ -1,0 +1,60 @@
+{
+  "name": "my-react-app",
+  "private": true,
+  "version": "0.0.0",
+  "main": "main.cjs",
+  "type": "module",
+  "scripts": {
+    "start": "electron .",
+    "dev": "vite",
+    "build": "vite build && electron-builder --win",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.1.3",
+    "@mantine/charts": "^7.9.2",
+    "@mantine/core": "^7.9.2",
+    "@mantine/dates": "^7.9.2",
+    "@mantine/form": "^7.9.2",
+    "@mantine/notifications": "^7.9.2",
+    "@mantine/tiptap": "^7.9.2",
+    "@tabler/icons-react": "^3.7.0",
+    "chess.js": "^1.0.0-beta.8",
+    "mantine-contextmenu": "^7.9.1",
+    "mantine-datatable": "^7.9.1",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-chessboard": "^4.5.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "electron": "^30.0.3",
+    "electron-builder": "^24.13.3",
+    "electron-is-dev": "^3.0.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "vite": "^5.2.0"
+  },
+  "build": {
+    "appId": "2100011045",
+    "productName": "SimpleChessGUI",
+    "directories": {
+      "output": "dist_electron"
+    },
+    "files": [
+      "my-react-app/**/*",
+      "main.cjs"
+    ],
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
