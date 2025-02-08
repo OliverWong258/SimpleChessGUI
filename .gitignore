@@ -9,7 +9,7 @@ lerna-debug.log*
 
 node_modules
 dist
-dist_election/
+dist_election/*
 dist-ssr
 *.local
 
